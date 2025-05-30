@@ -1,0 +1,41 @@
+window {
+    font: 14px JetBrainsMono;
+    background: #1d2021; /* Match actual Vim/Kitty bg */
+    backdrop-filter: blur(10px);
+    color: #ebdbb2;
+    padding: 10px;
+    border: 2px solid #a89984;
+    border-radius: 6px;
+}
+
+/* Search input bar */
+#input {
+    background-color: #282828;
+    color: #ebdbb2;
+    border: 2px solid #83a598;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+/* Entry styling */
+#entry {
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #ebdbb2;
+}
+
+/* Highlighted/selected entry */
+#entry:selected {
+    background-color: #fabd2f;  /* Gruvbox bright yellow */
+    color: #1d2021;
+    border: none;
+}
+
+/* Hover effect for entries */
+#entry:hover {
+    background-color: #83a598;  /* Gruvbox soft blue */
+    color: #1d2021;
+}
+

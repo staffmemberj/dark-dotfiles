@@ -16,28 +16,28 @@ button {
 }
 #shutdown {
     background-image: image(url("/usr/share/icons/wlogout/shutdown.png"));
-    background-color: #282828;
+    background-color: #cc241d;
 }
 #reboot {
     background-image: image(url("/usr/share/icons/wlogout/reboot.png"));
-    background-color: #282828;
+    background-color: #d78821;
 }
 #logout {
     background-image: image(url("/usr/share/icons/wlogout/logout.png"));
-    background-color: #282828;
+    background-color: #b16186;
 }
 #hibernate {
     background-image: image(url("/usr/share/icons/wlogout/hibernate.png"));
-    background-color: #282828;
+    background-color: #98971a;
 }
 #suspend {
     background-image: image(url("/usr/share/icons/wlogout/suspend.png"));
-    background-color: #282828;
+    background-color: #458588;
 }
 #lock {
     background-image: image(url("/usr/share/icons/wlogout/lock.png"));
-    background-color: #282828;
+    background-color: #d65d0e;
 }
 #shutdown:hover, #reboot:hover, #logout:hover, #hibernate:hover, #suspend:hover, #lock:hover {
-    background-color: #928374;
+    background-color: #665c54;
 }
