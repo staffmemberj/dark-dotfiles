@@ -1,0 +1,43 @@
+#window {
+    background-color: #a89984; /* Gruvbox dark background */
+}
+button {
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    background-size: 25%;
+    background-color: #655c54; /* base color */
+    border: 12px solid #ebdbb2;
+    border-radius: 8px;
+    padding-top: 40px;
+    color: #ebdbb2;
+    font: bold 20px JetBrainsMono;
+    margin: 20px;
+    transition: background-color 0.2s;
+}
+#shutdown {
+    background-image: image(url("/usr/share/icons/wlogout/shutdown.png"));
+    background-color: #282828;
+}
+#reboot {
+    background-image: image(url("/usr/share/icons/wlogout/reboot.png"));
+    background-color: #282828;
+}
+#logout {
+    background-image: image(url("/usr/share/icons/wlogout/logout.png"));
+    background-color: #282828;
+}
+#hibernate {
+    background-image: image(url("/usr/share/icons/wlogout/hibernate.png"));
+    background-color: #282828;
+}
+#suspend {
+    background-image: image(url("/usr/share/icons/wlogout/suspend.png"));
+    background-color: #282828;
+}
+#lock {
+    background-image: image(url("/usr/share/icons/wlogout/lock.png"));
+    background-color: #282828;
+}
+#shutdown:hover, #reboot:hover, #logout:hover, #hibernate:hover, #suspend:hover, #lock:hover {
+    background-color: #928374;
+}

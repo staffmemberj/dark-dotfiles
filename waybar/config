@@ -1,0 +1,106 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the bottom of your screen
+    "height": 24, // Waybar height
+    // "width": 1366, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["custom/menu", "hyprland/workspaces", "hyprland/mode", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "pulseaudio", "battery", "custom/bluetooth", "network", "tray", "custom/logout"],
+    "hyprland/workspaces": {
+	"format": "{name} : {icon}",
+	"format-icons": {
+		"1": " ",
+		"2": " ",
+		"3": " ",
+		"4": " ",
+		"5": " ",
+		"active": " ",
+		"default": "󱔀 "
+	},
+        "persistent-workspaces": {
+      		"Virtual-1": [1, 2, 3, 4, 5]
+	}
+    },
+    "hyprland/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H:%M 󰇙 %m/%d/%Y}"
+    },
+    "cpu": {
+        "format": " {usage}%  ",
+	"on-click": "kitty -- htop"
+    },
+    "memory": {
+        "format": " {}%   ",
+	"on-click": "kitty -- htop"
+    },
+    "battery": {
+        "bat": "BAT0",
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": " {capacity}% {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": [" ", " ", " ", " ", " "],
+	"format-alt": " {health}% ✚"
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": " {essid} ({signalStrength}%)  ",
+        "format-ethernet": " {ifname} 󰈀 ",
+        "format-disconnected": " Disconnected ⚠  ",
+	"on-click": "plasmawindowed org.kde.plasma.networkmanagement"
+    },
+    "pulseaudio": {
+        //"scroll-step": 1,
+        "format": " {volume}% {icon}",
+        "format-bluetooth": "// {volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": " ",
+            "handsfree": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " "]
+        },
+        "on-click": "plasmawindowed org.kde.plasma.volume"
+    },
+    "custom/spotify": {
+        "format": " {}",
+        "max-length": 40,
+        "interval": 30, // Remove this if your script is endless and write in loop
+        "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
+        "exec-if": "pgrep spotify"
+    },
+    "custom/bluetooth": {
+        "format": "  ", 
+        "tooltip": false,
+        "on-click": "plasmawindowed org.kde.plasma.bluetooth",
+        "interval": 10,
+        "exec": "bluetoothctl show | grep -q 'Powered: yes' && echo '  ' || echo '  '",
+        "return-type": "text"
+    },
+    "custom/logout": {
+	"format": "{icon} ",
+	"format-icons": "  ",
+	"on-click": "wlogout",
+	"tooltip": false
+    },
+    "custom/menu": {
+	"format": "{icon} ",
+	"format-icons": "  ",
+	"on-click": "wofi --show drun",
+	"tooltip": false
+   }
+}

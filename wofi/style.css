@@ -1,0 +1,41 @@
+window {
+    font: 14px JetBrainsMono;
+    background: #282828; /* Uniform dark background */
+    backdrop-filter: blur(10px);
+    color: #ebdbb2; /* Gruvbox light text */
+    padding: 10px;
+    border: 2px solid #a89984; /* Gruvbox light border */
+    border-radius: 6px;
+}
+
+/* Search input bar */
+#input {
+    background-color: #282828; /* Uniform dark background */
+    color: #ebdbb2; /* Gruvbox light text */
+    border: 2px solid #83a598; /* Gruvbox blue */
+    padding: 5px;
+    border-radius: 6px;
+}
+
+/* Entry styling */
+#entry {
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #ebdbb2; /* Gruvbox light text */
+}
+
+/* Highlighted/selected entry */
+#entry:selected {
+    background-color: #ebdbb2; /* Gruvbox yellow highlight */
+    color: #282828; /* Gruvbox dark background */
+    border: none;
+}
+
+/* Optional: hover effect for entries */
+#entry:hover {
+    background-color: #458588; /* Gruvbox muted blue */
+    color: #282828; /* Gruvbox dark background */
+}
+

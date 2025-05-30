@@ -1,0 +1,121 @@
+* {
+    border: none;
+    border-radius: 0;
+    font: 14px JetBrainsMono;
+    min-height: 0;
+}
+
+#window {
+    background: #282828;
+}
+window#waybar {
+    background: none;
+    color: #ebdbb2;
+}
+
+/* Module Base Styling */
+#window,
+#workspaces button,
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#custom-spotify,
+#tray,
+#mode,
+#custom-bluetooth,
+#custom-menu,
+#custom-logout {
+    padding: 2px 8px;
+    margin: 2px 3px;
+    border: 2px solid #ebdbb2;
+    color: #ebdbb2;
+    border-radius: 4px;
+    background-color: #282828; /* Dark background for all modules */
+    box-shadow: 1 1 3 1px #151515;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* Individual Module Colors */
+#workspaces button {
+}
+
+#workspaces button.focused {
+}
+
+#clock {
+}
+
+#battery {
+}
+
+#cpu {
+}
+
+#memory {
+}
+
+#network {
+}
+
+#pulseaudio {
+}
+
+#tray {
+}
+
+#mode {
+}
+
+#custom-bluetooth {
+}
+
+#custom-menu {
+}
+
+/* Hover effects */
+#custom-menu:hover,
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-spotify:hover,
+#tray:hover,
+#mode:hover,
+#custom-bluetooth:hover,
+#custom-logout:hover {
+    background: #ebdbb2;
+    color: #282828;
+}
+
+/* Battery warning blink */
+@keyframes blink {
+    to {
+        background-color: #fabd2f;
+        color: #282828;
+    }
+}
+
+#battery.warning:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Disconnected/muted styles */
+#network.disconnected,
+#pulseaudio.muted {
+    background: #3c3836;
+    color: #d65d0e;
+}
+
+#custom-logout {
+}
+
