@@ -47,33 +47,51 @@ window#waybar {
 }
 
 #clock {
+    color: #8ec07c;   /* bright aqua */
 }
 
 #battery {
+    color: #b8bb26;   /* bright green */
 }
 
 #cpu {
+    color: #fb4934;   /* bright red */
 }
 
 #memory {
+    color: #fe8019;   /* bright orange — closest to bright d65d0e, not explicitly listed but standard Gruvbox */
 }
 
 #network {
+    color: #d3869b;   /* bright purple */
 }
 
 #pulseaudio {
+    color: #fabd2f;   /* bright yellow */
+}
+
+#custom-spotify {
+    color: #8ec07c;   /* bright aqua (same as #clock) */
 }
 
 #tray {
+    color: #ebdbb2;   /* light foreground/base text */
 }
 
 #mode {
+    color: #fabd2f;   /* bright yellow */
 }
 
 #custom-bluetooth {
+    color: #83a598;   /* bright blue */
 }
 
 #custom-menu {
+    color: #83a598;   /* bright blue */
+}
+
+#custom-logout {
+    color: #d5c4a1;   /* light text base */
 }
 
 /* Hover effects */
@@ -115,7 +133,3 @@ window#waybar {
     background: #3c3836;
     color: #d65d0e;
 }
-
-#custom-logout {
-}
-
