@@ -4,7 +4,6 @@ window {
     backdrop-filter: blur(10px);
     color: #ebdbb2;
     padding: 10px;
-    border: 2px solid #a89984;
     border-radius: 6px;
 }
 
@@ -12,7 +11,6 @@ window {
 #input {
     background-color: #282828;
     color: #ebdbb2;
-    border: 2px solid #83a598;
     padding: 5px;
     border-radius: 6px;
 }
@@ -38,3 +36,4 @@ window {
     background-color: #83a598;  /* Gruvbox soft blue */
     color: #1d2021;
 }
+
